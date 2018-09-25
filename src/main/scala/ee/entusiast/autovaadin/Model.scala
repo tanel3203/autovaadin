@@ -13,9 +13,8 @@ object Model {
 
   type Application = (Service, UserActionService, View, Components)
 
-  case class Generator( typ: String,
-                        name: String,
-                        components: Option[Seq[Generator]] = None,
-                        actions: Option[Seq[String]] = None
-                      )
+  case class Generator(typ: String,
+                       name: String,
+                       components: Option[Seq[Generator]] = None,
+                       actions: Option[Seq[String]] = None)
 }
