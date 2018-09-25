@@ -6,7 +6,7 @@ object LabelTemplate {
 
   import TemplateUtils._
 
-  def createLabelTemplate(clazzName: String, componentType: String, paramsGenerators: Seq[Generator], actions: Seq[String])(implicit packageName: String): String =
+  def create(clazzName: String, componentType: String, paramsGenerators: Seq[Generator], actions: Seq[String])(implicit packageName: String): String =
     s"""
        |package $packageName
        |
