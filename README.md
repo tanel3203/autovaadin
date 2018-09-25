@@ -17,6 +17,7 @@ v0.1
 
 
 Example input with a variable:
+```
 {
   "typ":"VerticalLayout",
   "name":"MainLayout",
@@ -38,3 +39,4 @@ Example input with a variable:
   }
   ]
 }
+```
