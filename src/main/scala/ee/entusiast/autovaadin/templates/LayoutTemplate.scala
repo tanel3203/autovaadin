@@ -16,13 +16,9 @@ object LayoutTemplate {
        |}
    """.stripMargin
 
+  private def createParams(params: Seq[String]): Seq[String] =
+    params.map(param => s"${changeBetweenClassNameAndVariableName(param)}: ${param}")
 
-  private def createParams(params: Seq[String]): Seq[String] = {
-    params.map(param => s"${changeBetweenClassNameAndVariableName(param)}: ${param}"
-    )
-  }
-
-  private def createAddComponents(params: Seq[String]): Seq[String] = {
+  private def createAddComponents(params: Seq[String]): Seq[String] =
     params.map(param => s"\taddComponent(${changeBetweenClassNameAndVariableName(param)})")
-  }
 }

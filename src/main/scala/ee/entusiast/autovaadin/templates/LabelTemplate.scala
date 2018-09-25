@@ -16,10 +16,8 @@ object LabelTemplate {
        |}
    """.stripMargin
 
-
-  def createLabelParams(paramsAndTypes: Seq[(String, String)]): Seq[String] = {
-    paramsAndTypes.map(paramWithType => s"${changeBetweenClassNameAndVariableName(paramWithType._1)}: ${paramWithType._2}"
-    )
-  }
+  def createLabelParams(paramsAndTypes: Seq[(String, String)]): Seq[String] =
+    paramsAndTypes.map(paramWithType =>
+      s"${changeBetweenClassNameAndVariableName(paramWithType._1)}: ${paramWithType._2}")
 
 }

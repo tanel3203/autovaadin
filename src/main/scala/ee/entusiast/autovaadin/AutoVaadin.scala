@@ -6,9 +6,7 @@ import ee.entusiast.autovaadin.generators._
 
 object AutoVaadin {
 
-
   def create(generatorInput: String, relPathFromCurrentDirectory: String) = {
-
     val relPath = relPathFromCurrentDirectory
     val packageName = (for {
       prepared: String <- Some(relPath.split("src/main/scala/").last.replace("/", "."))
@@ -16,10 +14,11 @@ object AutoVaadin {
     } yield trimmed).getOrElse(relPath)
 
     val generator = generate[Generator](generatorInput)
-
     val app = createApplication(generator, packageName)
     val fileCreationSuccessful = makeFiles(app, relPath+"generated/")
 
+    if (fileCreationSuccessful) LOG.info(s"Success!")
+    else LOG.warn("File creation failed!")
   }
 
   private def createApplication(generator: Generator, packageName: String): Application = {
