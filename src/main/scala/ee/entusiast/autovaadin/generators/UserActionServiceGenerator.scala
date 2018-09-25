@@ -1,6 +1,6 @@
 package ee.entusiast.autovaadin.generators
 
-import ee.entusiast.autovaadin.Model.UserActionService
+import ee.entusiast.autovaadin.Model._
 
 object UserActionServiceGenerator {
 

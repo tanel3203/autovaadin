@@ -1,6 +1,6 @@
 package ee.entusiast.autovaadin.templates
 
-import ee.entusiast.autovaadin.Model.Generator
+import ee.entusiast.autovaadin.Model._
 
 object LabelTemplate {
 

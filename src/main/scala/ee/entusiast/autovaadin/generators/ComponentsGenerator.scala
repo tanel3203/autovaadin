@@ -1,8 +1,8 @@
 package ee.entusiast.autovaadin.generators
 
 import ee.entusiast.autovaadin.LOG
-import ee.entusiast.autovaadin.Model.{Components, Generator, SingleComponent}
-import ee.entusiast.autovaadin.templates.{LabelTemplate, LayoutTemplate}
+import ee.entusiast.autovaadin.Model._
+import ee.entusiast.autovaadin.templates._
 
 object ComponentsGenerator {
 

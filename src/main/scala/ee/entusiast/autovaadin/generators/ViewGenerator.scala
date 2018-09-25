@@ -1,6 +1,6 @@
 package ee.entusiast.autovaadin.generators
 
-import ee.entusiast.autovaadin.Model.View
+import ee.entusiast.autovaadin.Model._
 
 object ViewGenerator {
 
