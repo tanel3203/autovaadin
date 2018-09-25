@@ -97,6 +97,6 @@ object Main extends App {
        |
    """.stripMargin
 
-  AutoVaadin.create(generatorS, "./src/main/scala/ee/entusiast/autovaadin/")
+  AutoVaadin.create(generatorS, "./src/main/scala/ee/entusiast/autovaadin/"+"generated/")
 
 }

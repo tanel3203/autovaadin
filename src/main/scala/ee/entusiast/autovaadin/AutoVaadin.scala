@@ -15,7 +15,7 @@ object AutoVaadin {
 
     val generator = generate[Generator](generatorInput)
     val app = createApplication(generator, packageName)
-    val fileCreationSuccessful = makeFiles(app, relPath+"generated/")
+    val fileCreationSuccessful = makeFiles(app, relPath)
 
     if (fileCreationSuccessful) LOG.info(s"Success!")
     else LOG.warn("File creation failed!")
